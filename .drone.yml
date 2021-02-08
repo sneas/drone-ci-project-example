@@ -1,0 +1,9 @@
+kind: pipeline
+name: default
+type: docker
+steps:
+  - name: frontend
+    image: node
+    commands:
+      - npm ci
+      - npm run test
